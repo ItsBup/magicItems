@@ -9,7 +9,7 @@ export class MagicItemController extends BaseController {
     .get('',this.getMagicItems)
     .post('',this.createMagicItems)
     .delete('/:thisItem',this.deleteMagicItems)
-    .post('/:thisPayload', this.updateMagicItem)
+    .put('/:thisPayload', this.updateMagicItem)
   }
 
   getMagicItems(request, response, next){
